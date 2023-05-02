@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body style ="margin-left:300px; margin-right:300px; ">
+
+    <main class="main">
+        <h1><a href="index.html" class="name"> The true <br>ADVENTURE </a> </h1>
+        <article style="text-align: center ;">
+            <form>
+                <h1>Feedback</h1>
+                <label for="phone_number"> Phone number </label>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="099-566-74-74" > <br>
+                <label for="feedback-type"> Choose type of feedback you want to provide </label>
+                
+                <select id="feedback-type" name="feedback-type"> 
+                    <option value="wishes"> Wishes </option>
+                    <option value="support"> Support </option>
+                    <option value="report"> Report </option>
+                </select>
+                <br>
+                <textarea name="message" rows="10" cols="30"> </textarea>
+                <br>
+                <label for="my_file2">Add file (optional)</label>
+                <input type="file" id="my_file2" name="my_file2" accept="">
+                <input type="button" onclick="alert('Thank you for submitting')" value="Submit">
+            </form>
+        </article>
+    </main>
+ 
+</body>
+</html>
+
+
+

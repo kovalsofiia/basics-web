@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd 1</title>
+</head>
+<body style="text-align: center; background-color: rgb(252, 67, 98); margin-left: 250px; margin-right: 250px; margin-bottom: 250px; margin-top: 100px;">
+            <article style="text-align: center; color: black; padding: 50px; background-color: pink ; border-radius: 30px;">
+                <p style="text-align: justify;">Завдання 1. Створити форму для реєстрації. Форма повинна містити поля для введення - імені,
+                    - прізвища, - електронної пошти, - паролю, - номеру телефону, - короткого тексту, - елемент для вибору
+                    статі та - кнопку відправити. Використати css файл для візуального оформлення форми.</p>
+                <form action="#" method="post" target="_blank">
+                    <h1>Registration</h1>
+                    <label for="name"> Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Your name"> <br>
+
+                    <label for="surname"> Surname: </label>
+                    <input type="text" id="surname" name="surname" placeholder="Your surname"> <br>
+
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email" name="email" placeholder="username@gmail.com"> <br>
+                
+                    <label for="password"> Password: </label>
+                    <input type="password" id="password" name="password" placeholder="strong password"> <br>
+                    
+                    <label for="phone_number"> Phone number: </label>
+                    <input type="tel" id="phone_number" name="phone_number" placeholder="099-566-74-74" > <br>
+
+                    <label for="gender"> Gender: </label>
+                    <input type = "radio" name="gender" id="gender">
+                    <label for="female"> Female </label>
+                    <input type = "radio" name="gender" id="female">
+                    <label for="male"> Male </label>
+                    <input type = "radio" name="gender" id="male">
+                    <label for="other"> Other </label>
+                    <radio name="other" id="Other"><br>
+                    
+                    <label for="language"> Language: </label>
+                    <select name="language" id="language">
+                        <option value="English">English</option>
+                        <option value="German">German</option>
+                        <option value="Spanish">Spanish</option>
+                        <option> Other </option>
+                    </select> <br>
+
+                    <label for="about"> About: </label>
+                    <input type="text" id="about" name="about" placeholder="Write about yourself"> <br>
+
+                    <input type="button" style="border-radius: 30px; background-color: white; margin: 10px;" onclick="alert(`Thank you for submitting`)" value="Register">
+                </form>
+            </article> 
+</body>
+</html>

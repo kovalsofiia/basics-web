@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.rectangle{
+    width: 100%;
+    min-height: 300px;
+    background-color:white;
+    font-size: 150%;
+}
+
+header{
+    background-color: green;
+}
+
+aside{
+    width: 100px;
+}
+
+footer{
+    background-color: green;
+}
+
+/* Desktop first*/
+.ex3 .maket{
+    display: flex;
+    flex-direction: column;
+}
+
+.ex3 header{
+    display: flex;
+    flex-direction: column;
+}
+
+.ex3 nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.ex3 footer{
+    display: flex;
+    flex-direction: column;  
+}
+
+@media screen and (max-width: 720px) {
+    .ex3 .maket{
+        display: flex;
+    flex-direction: column;
+    }
+    .ex3 header{
+        display: flex;
+    flex-direction: row;
+    }
+    .ex3 aside ul{
+        display: flex;
+    flex-direction: column;
+    }
+    
+    .ex3 footer{
+        display: flex;
+    flex-direction: column;
+    }
+
+    .ex3 nav ul {
+        display: none;
+    }
+
+    .ex3 nav:hover ul {
+        display: block;
+        background-color: antiquewhite;
+        position: relative;
+        z-index: 10;
+    }
+
+    .ex3 nav::before {
+        content: "☰";
+    }
+}

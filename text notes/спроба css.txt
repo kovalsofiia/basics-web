@@ -1,0 +1,38 @@
+ul {
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+li {
+    float: left;
+
+}
+
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover{
+    background-color: #ef9eca;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 850px auto;
+    grid-template-rows: 200px auto 200px ;
+
+}
+
+.header{
+    grid-column: 1/ span 2;
+    width: 100%;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    display: block;
+}
