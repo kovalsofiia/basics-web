@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>
+        Welcome at our registartion page
+    </h1>
+    <!-- ========================================================== -->
+    <!-- ========================================================== -->
+    <p>Завдання 1
+        Створити форму авторизації, яка містить поля для введення логіну, пароля та позначку
+        «залишатись в системі». Користувач вводить логін та пароль. Здійснити їх перевірку
+        (вірні пари логінів та паролів зберігаються у масиві)
+    </p>
+    <li>
+        <ol>student1 - password1</ol>
+        <ol>student2 - password2</ol>
+        <ol>student3 - password3</ol>
+    </li>
+    <form>
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="remember">Remember me:</label>
+        <input type="checkbox" id="remember" name="remember"><br>
+
+        <input type="button" value="Submit" onclick="submitForm()">
+    </form>
+    <!-- ========================================================== -->
+    <!-- ========================================================== -->
+    <p>Завдання 2
+        Створити форму пошуку. В поле вводу вводимо назву предмета. Вивести на сторінку
+        зображення цього предмета (пари назви предмету та url зображення зберігаються в
+        масиві).
+        <li>
+            <ol>Octopus</ol>
+            <ol>Elephant</ol>
+            <ol>Wolf</ol>
+            <ol>Coala</ol>
+            <ol>Dinosaur</ol>
+        </li>
+    </p>
+    <form>
+        <label for="subject">Name of subject:</label>
+        <input type="text" id="subject" name="subject" required><br>
+        <input type="button" value="Submit" onclick="searchSubject()">
+    </form>
+    <img id="result" src="">
+
+
+    <!-- ========================================================== -->
+    <!-- ========================================================== -->
+    <p>Завдання 3 Створити форму доставки. З клавіатури вводиться вартість та маса товару. Вартість доставки визначається за таблицею:</p>
+<table>
+    <tr style="background-color: darkred; color: white;">
+        <td>Category</td>
+        <td>Мала до 2 кг</td>
+        <td>Середня до 10 кг</td>
+        <td>Велика до 30 кг</td>
+    </tr>
+    <tr>
+        <td>Локал, грн</td>
+        <td>40</td>
+        <td>60</td>
+        <td>80</td>
+    </tr>
+</table>
+<p>Додатково товар можна застрахувати. Вартість страховки складає 2% вартості. Визначити
+загальну вартість доставки.</p>    
+
+<form>
+    <label for="price">Вартість товару:</label>
+    <input type="number" id="price" name="price"><br>
+    <label for="weight">Маса товару:</label>
+    <input type="number" id="weight" name="weight"><br>
+    <label for="insurance">Страхування:</label>
+    <input type="checkbox" id="insurance" name="insurance" value="yes"><br>
+    <button type="button" onclick="calculate()">Submit</button>
+  </form>
+    <!-- ========================================================== -->
+    <!-- ========================================================== -->
+</body>
+</html>

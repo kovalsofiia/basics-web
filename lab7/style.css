@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    margin: 5%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(158,158,255);
+}
+p{
+    text-align: justify;
+    font-size: large;
+}
+li{
+    text-align: justify;
+}
+
+table{
+    border-color: black; border-style: dotted;
+}
+form{
+    text-align: right;
+    font-size: large;
+    font-weight: bold;
+}
