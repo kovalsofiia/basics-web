@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <form>
+        <h2>Finance department</h2>
+
+        <label for="name">Прізвище та ім'я:</label>
+        <input type="text" id="name" name="name"><br><br>
+    
+        <label for="position">Посада:</label>
+        <input type="text" id="position" name="position"><br><br>
+    
+        <label for="salary">Заробітна плата:</label>
+        <input type="text" id="salary" name="salary"><br><br>
+    
+        <label for="childrenAmount">Кількість дітей:</label>
+        <input type="text" id="childrenAmount" name="childrenAmount"><br><br>
+    
+        <label for="workExperience">Стаж:</label>
+        <input type="text" id="workExperience" name="workExperience"><br><br>
+        
+        <button type="button" onclick="addNewPerson()">Додати співробітника</button><br>
+
+        <h3>Operations</h3>
+        <label for="code">Код:</label>
+        <input type="text" id="code" name="code"><br>
+
+        <p>1.Get person by code</p>
+        <button type="button" onclick="showPerson()">Інформація про співробітника</button><br>
+
+        <p>2.Edit person by code</p>
+        <button type="button" onclick="editEmployee()">Редагувати інформацію</button><br>
+
+        <p>3.Delete person by code</p>
+        <button type="button" onclick="deletePerson()">Видалити співробітника</button> <br>
+        <br>
+        <label for="req">Запит(наприклад заробітна плата):</label>
+        <input type="text" id="req" name="rew"><br>
+        <p>4.Get person by request</p>
+        <button type="button" onclick="answerRequest()">Пошук по запиту</button>
+    </form>
+    
+</body>
+</html>
