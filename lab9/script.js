@@ -44,15 +44,23 @@ class FinanceDeparmentPersons{
             this.persons.push(newPerson);
         }
     }
-    // deleteAllInformationABoutPerson(){       
-    // }
+
+    deleteAllInformationABoutPerson(idValue){       
+        let index = this.persons.indexOf(idValue);
+        this.persons.splice(index, 1);
+    }
 
     getPersonByRequest(request){
         return this.persons.filter(obj => obj.position == request || obj.salary == request || obj.childrenAmount == request || obj.workExperience == request)
     }
 }
 
-
+let fin1 = new FinanceDepartment("Приходько Іван", "головний бухгалтер", 10000, 2, 5);
+let fin2 = new FinanceDepartment("Петрищак Олена", "завідуюча відділу статистики", 7000, 2, 3);
+let fins = new FinanceDeparmentPersons();
+fins.addNewPersonTo(fin1);
+fins.addNewPersonTo(fin2);
+console.log(fins);
 
 // Функція, яка буде додавати нову людину в колекцію persons за допомогою форми
 function addNewPerson(){
@@ -104,6 +112,11 @@ function editPerson(){
     }
 }
 
+function deletePerson(){
+    const code = document.getElementById("code").value;
+    fins.deleteAllInformationABoutPerson(code);
+    alert(`Info for person for code ${code} has been deleted.`);
+}
 
 // Функція, яка буде виводити інформацію про людину за допомогою запиту
 function answerRequest(){
@@ -112,11 +125,3 @@ function answerRequest(){
     alert(`Person for request ${request} is \n\n${fins.getPersonByRequest(request)}`);
     console.log(`Person for request is`,fins.getPersonByRequest(request));
 }
-
-
-let fin1 = new FinanceDepartment("Приходько Іван", "головний бухгалтер", 10000, 2, 5);
-let fin2 = new FinanceDepartment("Петрищак Олена", "завідуюча відділу статистики", 7000, 2, 3);
-let fins = new FinanceDeparmentPersons();
-fins.addNewPersonTo(fin1);
-fins.addNewPersonTo(fin2);
-console.log(fins);

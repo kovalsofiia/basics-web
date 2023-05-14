@@ -1,0 +1,19 @@
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+label{
+    background-color: orange;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: medium;
+}
+button{
+    background-color: blanchedalmond;
+    border-radius: 30px;
+}
+input{
+    background-color: blanchedalmond;
+    border-style: dotted;
+    border-radius: 30px;
+}
