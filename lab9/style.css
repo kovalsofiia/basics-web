@@ -1,6 +1,7 @@
 body{
     background-color: blanchedalmond;
     text-align: center;
+    
 }
 label{
     background-color: orange;
@@ -17,3 +18,13 @@ input{
     border-style: dotted;
     border-radius: 30px;
 }
+th{
+    width: auto;
+    background-color: rgb(248, 194, 113);
+}
+td{
+    width: 600px;
+    padding: 10px;
+    border-style: solid
+}
+
