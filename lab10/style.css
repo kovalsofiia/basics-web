@@ -1,0 +1,11 @@
+
+  th, td {
+    border: 3px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(35, 142, 35, 0.811)  ;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    width: 200px;
+  }
