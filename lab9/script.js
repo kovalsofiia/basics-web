@@ -55,12 +55,10 @@ class FinanceDeparmentPersons{
     getAll() {
         return [...this.persons];
     }
+    
 
 }
     
-    
-
-
 let fin1 = new FinanceDepartment("Приходько Іван", "головний бухгалтер", 10000, 5, 5);
 let fin2 = new FinanceDepartment("Петрищак Олена", "завідуюча відділу статистики", 7000, 2, 3);
 let fin3 = new FinanceDepartment("Вакуленко Андрій", "стажер", 5300, 0, 0);
@@ -97,5 +95,27 @@ function showPerson(){
   function deletePerson(){
     const code = document.getElementById("code").value;
     fins.delete(code);
-    alert(`Info for person for code ${code} has been deleted.`);
+    console.log(`Info for person for code ${code} has been deleted.`);
+}
+
+function editPerson(){
+    const code = document.getElementById("code").value;
+    const person = fins.getById(code);
+    if (person) {
+        const fullName = prompt(`Введіть нове прізвище та ім'я:`, person.name);
+        const position = prompt(`Введіть нову посаду:`, person.position);
+        const salary = prompt(`Введіть нову заробітну плату:`, person.salary);
+        const childrenCount = prompt(`Введіть нову кількість дітей:`, person.childrenAmount);
+        const experience = prompt(`Введіть новий стаж:`, person.workExperience);
+
+        person.name = fullName || person.name;
+        person.position = position || person.position;
+        person.salary = salary || person.salary;
+        person.childrenAmount = childrenCount || person.childrenAmount;
+        person.workExperience = experience || person.workExperience;
+
+        console.log(`Info for person for code ${code} has been updated.`);
+    } else {
+        alert(`Not found!`);
+    }
 }
