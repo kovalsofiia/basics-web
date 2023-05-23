@@ -78,6 +78,7 @@ function AddNewUser() {
 
     const newPerson = new FinanceDepartment(name, position, salary, childrenAmount, workExperience);
     fins.add(newPerson);
+    finsWithDom.add(newPerson);
     alert(`New person has been added`);
 }
 
@@ -95,6 +96,7 @@ function showPerson(){
   function deletePerson(){
     const code = document.getElementById("code").value;
     fins.delete(code);
+    finsWithDom.delete(code);
     console.log(`Info for person for code ${code} has been deleted.`);
 }
 
