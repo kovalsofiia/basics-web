@@ -69,6 +69,7 @@ fins.add(fin3);
 fins.getByChildrenAmount(3);
 fins.getByPosition("стажер");
 
+//FUNCTIONS
 function AddNewUser() {
     const name = document.getElementById('name').value;
     const position = document.getElementById('position').value;
