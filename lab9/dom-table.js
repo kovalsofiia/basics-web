@@ -49,8 +49,10 @@ class UsersWithDOM extends FinanceDeparmentPersons {
 
 }
 
+let fin1 = new FinanceDepartment("Приходько Іван", "головний бухгалтер", 10000, 5, 5);
+let fin2 = new FinanceDepartment("Петрищак Олена", "завідуюча відділу статистики", 7000, 2, 3);
+let fin3 = new FinanceDepartment("Вакуленко Андрій", "стажер", 5300, 0, 0);
 
- 
 let finsWithDom = new UsersWithDOM();
 finsWithDom.add(fin1);
 finsWithDom.add(fin2);

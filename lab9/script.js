@@ -59,15 +59,15 @@ class FinanceDeparmentPersons{
 
 }
     
-let fin1 = new FinanceDepartment("Приходько Іван", "головний бухгалтер", 10000, 5, 5);
-let fin2 = new FinanceDepartment("Петрищак Олена", "завідуюча відділу статистики", 7000, 2, 3);
-let fin3 = new FinanceDepartment("Вакуленко Андрій", "стажер", 5300, 0, 0);
-let fins = new FinanceDeparmentPersons();
-fins.add(fin1);
-fins.add(fin2);
-fins.add(fin3);
-fins.getByChildrenAmount(3);
-fins.getByPosition("стажер");
+// let fin1 = new FinanceDepartment("Приходько Іван", "головний бухгалтер", 10000, 5, 5);
+// let fin2 = new FinanceDepartment("Петрищак Олена", "завідуюча відділу статистики", 7000, 2, 3);
+// let fin3 = new FinanceDepartment("Вакуленко Андрій", "стажер", 5300, 0, 0);
+// let fins = new FinanceDeparmentPersons();
+// fins.add(fin1);
+// fins.add(fin2);
+// fins.add(fin3);
+// fins.getByChildrenAmount(3);
+// fins.getByPosition("стажер");
 
 //FUNCTIONS
 function AddNewUser() {
@@ -78,14 +78,15 @@ function AddNewUser() {
     const workExperience = document.getElementById('workExperience').value;
 
     const newPerson = new FinanceDepartment(name, position, salary, childrenAmount, workExperience);
-    fins.add(newPerson);
+    // fins.add(newPerson);
     finsWithDom.add(newPerson);
     alert(`New person has been added`);
 }
 
 function showPerson(){
     const idValue = document.getElementById('code').value;
-    const person = fins.getById(idValue);
+    // const person = fins.getById(idValue);
+    const person = finsWithDom.getById(idValue);
     if (person) {
       console.log(`Person for code is`,person);
       alert(`Person for code = ${idValue} is \n\n${person}`);
@@ -96,14 +97,15 @@ function showPerson(){
 
   function deletePerson(){
     const code = document.getElementById("code").value;
-    fins.delete(code);
+    // fins.delete(code);
     finsWithDom.delete(code);
     console.log(`Info for person for code ${code} has been deleted.`);
 }
 
 function editPerson(){
     const code = document.getElementById("code").value;
-    const person = fins.getById(code);
+    // const person = fins.getById(code);
+    const person = finsWithDom.getById(code);
     if (person) {
         const fullName = prompt(`Введіть нове прізвище та ім'я:`, person.name);
         const position = prompt(`Введіть нову посаду:`, person.position);
