@@ -24,3 +24,11 @@ fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
   .catch(error => {
     console.log('Виникла помилка при отриманні даних:', error);
   });
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = 'Date is ' + mm + '/' + dd + '/' + yyyy;
+document.write(today);
