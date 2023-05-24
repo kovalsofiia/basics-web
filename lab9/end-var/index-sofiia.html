@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style-sofiia.css">
+    <title>Лабораторна №9</title>
+</head>
+<body>
+    <h2>Finance department</h2>
+<table>
+    <tr>
+        <td>
+            <div class="add_user">
+                <form action="" onsubmit="return false" id="add_form">
+                    <label for="code">Код:</label>
+                    <input type="number" id="user_code" placeholder="Код"><br><br>
+                    <label for="name">Прізвище та ім'я:</label>
+                    <input type="text" id="user_nms" placeholder="ПІБ"><br><br>
+                    <label for="position">Посада:</label>
+                    <input type="text" id="user_position" placeholder="Посада"><br><br>
+                    <label for="salary">Заробітна плата:</label>
+                    <input type="number" id="user_salary" placeholder="Зарплатня"><br><br>
+                    <label for="childrenAmount">Кількість дітей:</label>
+                    <input type="text" id="user_children" placeholder="К-ть дітей"><br><br>
+                    <label for="workExperience">Стаж:</label>
+                    <input type="text" id="user_experience" placeholder="Стаж"><br><br>
+                    <button id="add_btn">Додати співробітника</button>
+                </form>
+            </div>
+<h2>Operations</h2>
+<p>1.Delete person by code</p>
+            <div class="delete_user">
+                <form action="" onsubmit="return false">
+                    <label for="code">Код</label>
+                    <input type="text" id="delete_code" placeholder="Код"><br><br>
+                    <button id="delete_btn">Видалити співробітника</button>
+                </form>
+            </div><br>
+<p>2.Change information about person by code</p>
+            <div class="change_user">
+                <form action="" onsubmit="return false">
+                    <label for="code">Код</label>
+                    <input type="number" id="change_code" placeholder="Код"><br><br>
+                    <input type="text" id="change_nms" placeholder="ПІБ"><br>
+                    <input type="number" id="change_position" placeholder="Посада (можна змінити)"><br>
+                    <input type="text" id="change_salary" placeholder="Зарплатня (можна змінити)"><br>
+                    <input type="text" id="change_children" placeholder="К-ть дітей"><br>
+                    <button id="change_btn">Редагувати інформацію</button>
+                </form>
+            </div>
+        </td>
+
+        <td>
+            <div class="users_list"></div>
+        </td>
+    </tr>
+</table>
+
+<script src="script-sofiia.js"></script>
+
+</body>
+</html>
