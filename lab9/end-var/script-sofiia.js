@@ -75,13 +75,6 @@ class FinanceDept{
     GetOverallInfo(){
         return `ПІБ ${this.nms} Код ${this.code} Посада ${this.position} Зарплатня ${this.salary} К-ть дітей ${this.children} Стаж ${this.experience}`;
     }
-    // changeAge(new_age){
-    //     if(new_age < 18){
-    //         this.allowed = false;
-    //     }else{
-    //         this.allowed = true;
-    //     }
-    // }
 }
 let NewDepartment = new FinanceDeptWorkers();
 document.querySelector("#add_btn").addEventListener('click', ()=>{
