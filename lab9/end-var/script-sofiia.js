@@ -100,13 +100,18 @@ const showUsers = function (tournament){
         card_holder.innerHTML += `<table>
         <tr>
         <th>Код</th>
-        <th>ПІБ</th>        
+        <th>ПІБ</th>  
+        <th>Посада</th>      
         <th>Зарплатня</th>
+        
+        <th>К-ть дітей</th>
         </tr>
         <tr>
         <td> ${user.code}</td>
         <td>${user.nms}</td>    
-        <td>${user.salary}</td>  
+        <td>${user.position}</td>
+        <td>${user.salary}</td>
+        <td>${user.children}</td>
         </tr>
         </table>
         </div>`
