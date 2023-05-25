@@ -1,0 +1,36 @@
+body{
+    text-align: justify;
+    background-color: lightblue;
+    
+}
+
+
+label{
+    
+    border-radius: 30px;
+    padding: 5px;
+    font-size: medium;
+}
+button{
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+}
+input{
+    background-color:  rgb(245, 215, 215);
+    border-style: dotted;
+    border-radius: 30px;
+}
+#add{
+    width: 400px;
+}
+th{
+    width: 300px;
+    background-color: lightcoral;
+}
+td{
+    padding: 10px;
+    border-style: solid;   
+}
+
+
