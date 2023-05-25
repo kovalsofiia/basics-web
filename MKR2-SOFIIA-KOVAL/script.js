@@ -25,7 +25,7 @@ class Movies_Collection{
     constructor(){
         this.movies_saved = [];
     } 
-    // • Відобразити дані про фільми в яких грає вказаний виконавець на сторінці.
+    
     getBy_main_actor(main_actor){
         let res_array = [];
         for(let movie of this.movies_saved){
@@ -90,7 +90,7 @@ let PublishMoviesToHTML = function (cinema_name){
 
 
 
-
+// • Відобразити дані про фільми в яких грає вказаний виконавець на сторінці.
 document.querySelector("#search_btn").addEventListener("click", ()=>{
     let res =  Cinema.getBy_main_actor(document.querySelector("#search_form").value);
     let r = document.querySelector(".found_holder")
